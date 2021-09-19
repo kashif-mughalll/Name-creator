@@ -10,11 +10,13 @@ var BackColor = document.getElementById('backcolor');
 
 
 BackColor.addEventListener('change', (e) => {
+  console.log(e.target.value)
   BackColor = e.target.value;
   CreateScreen()
 })
 
 ForColor.addEventListener('change', (e) => {
+  console.log(e.target.value)
   Color = e.target.value;
 })
 
