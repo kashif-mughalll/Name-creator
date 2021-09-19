@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.box{
+  height: 10px;
+  width: 10px;
+  background-color: aqua;
+}
+
+#screen{
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #888;
+  display: grid;
+  grid-template-columns: repeat(56,10px);
+  gap: 2px;
+  width: min-content;
+}
+
+#Text{
+  height: 800px;
+  width: 400px;
+  background-color: #ddd;
+  color: #555;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #aaa;
+}
+
+#GenerateText{
+  font-size: 25px;
+  padding: 30px 50px;
+  transition: all 0.25s;
+}
+
+#GenerateText:hover{
+  font-size: 25px;
+  padding: 30px 50px;
+  background-color: aquamarine;
+}
+
+.labelStyle{
+  font-size: 15px;
+  color: #777;
+  margin: 20px;
+}
+
+.flex{
+  display: flex;
+}

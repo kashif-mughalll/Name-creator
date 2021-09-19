@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algo Kashif</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <label class="labelStyle" for="backcolor">Background color </label>
+        <select id="backcolor" value="White">
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Orange">Orange</option>
+          <option value="Purple">Purple</option>
+        </select>
+      </div>
+      <div class="flex">
+        <label class="labelStyle" for="forcolor">Foreground color </label>
+        <select id="forcolor" value="Blue">
+          <option value="Blue">Blue</option>
+          <option value="Black">Black</option>
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option>
+          <option value="Orange">Orange</option>
+          <option value="Purple">Purple</option>
+        </select>
+      </div>
+      <div id="screen"></div>
+      <button id="GenerateText">Generate JSON</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
