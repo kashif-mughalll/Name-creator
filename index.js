@@ -2,7 +2,7 @@ var screen = document.getElementById('screen');
 var text = document.getElementById('Text');
 var GenerateTextBtn = document.getElementById('GenerateText');
 var Color = 'Blue';
-var BackColor = 'white'
+var BackColor = 'White'
 var DS = [];
 
 var ForColor = document.getElementById('forcolor');
@@ -2071,5 +2071,3 @@ DS = [
     ]
   }
 ]
-
-CreateScreen();
