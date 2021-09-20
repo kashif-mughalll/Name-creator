@@ -15,13 +15,13 @@ window.addEventListener('load', () => {
   }, 100);
 })
 
-document.getElementById('click').addEventListener('click', () => {
-  var c = screen.children;
-  for (let i = 0; i < c.length; i++) {
-    const element = c[i];
-    element.click();
-  }
-})
+// document.getElementById('click').addEventListener('click', () => {
+//   var c = screen.children;
+//   for (let i = 0; i < c.length; i++) {
+//     const element = c[i];
+//     element.click();
+//   }
+// })
 
 BackColor.addEventListener('change', (e) => {
   document.getElementById('back-drop').style.display = 'flex';
