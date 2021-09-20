@@ -4,15 +4,32 @@ var GenerateTextBtn = document.getElementById('GenerateText');
 var Color = 'Blue';
 var BackColor = 'White'
 var DS = [];
-
 var ForColor = document.getElementById('forcolor');
 var BackColor = document.getElementById('backcolor');
 
+window.addEventListener('load', () => {
+  document.getElementById('back-drop').style.display = 'flex';
+  setTimeout(() => {
+    BackColor = 'White';
+    CreateScreen()
+  }, 100);
+})
+
+document.getElementById('click').addEventListener('click', () => {
+  var c = screen.children;
+  for (let i = 0; i < c.length; i++) {
+    const element = c[i];
+    element.click();
+  }
+})
 
 BackColor.addEventListener('change', (e) => {
+  document.getElementById('back-drop').style.display = 'flex';
   console.log(e.target.value)
   BackColor = e.target.value;
-  CreateScreen()
+  setTimeout(() => {
+    CreateScreen()
+  }, 100);
 })
 
 ForColor.addEventListener('change', (e) => {
@@ -101,6 +118,7 @@ function CreateScreen() {
     }
   }
   console.log('Screen Created');
+  document.getElementById('back-drop').style.display = 'none';
 }
 
 DS = [

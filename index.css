@@ -59,3 +59,19 @@
 .flex{
   display: flex;
 }
+
+#back-drop{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(66, 66, 66, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#back-drop p{
+  font-size: 34px;
+  color: white;
+}
